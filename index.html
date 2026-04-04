@@ -38,11 +38,11 @@
         <input type="search" placeholder="Servis və ya məhsul axtar" />
       </label>
       <nav class="drawer-nav" aria-label="Mobil menyu">
-        <a href="#popular">Ana səhifə</a>
-        <a href="#catalog">Məhsullar</a>
-        <a href="#detail">Detallar</a>
-        <a href="#reviews">Rəylər</a>
-        <a href="#footer">Əlaqə</a>
+        <a href="./index.html#popular">Ana səhifə</a>
+        <a href="./index.html#catalog">Məhsullar</a>
+        <a href="./cart.html">Səbət</a>
+        <a href="./payment.html">Ödəniş</a>
+        <a href="./index.html#reviews">Rəylər</a>
       </nav>
       <button class="support-prompt" type="button" data-ripple data-magnetic>
         <span class="support-orb"></span>
@@ -73,11 +73,11 @@
         </div>
 
         <nav class="desktop-nav" aria-label="Əsas naviqasiya">
-          <a href="#popular">Ana səhifə</a>
-          <a href="#catalog">Məhsullar</a>
-          <a href="#detail">Detallar</a>
-          <a href="#reviews">Rəylər</a>
-          <a href="#footer">Əlaqə</a>
+          <a href="./index.html#popular">Ana səhifə</a>
+          <a href="./index.html#catalog">Məhsullar</a>
+          <a href="./cart.html">Səbət</a>
+          <a href="./payment.html">Ödəniş</a>
+          <a href="./index.html#reviews">Rəylər</a>
         </nav>
 
         <label class="search-shell header-search">
@@ -86,8 +86,11 @@
         </label>
 
         <div class="header-actions">
-          <button class="action-chip" type="button" data-ripple>0.00 ₼</button>
-          <button class="action-chip" type="button" data-ripple>Səbət</button>
+          <a class="action-chip" href="./payment.html" data-ripple data-cart-total>0.00 ₼</a>
+          <a class="action-chip cart-chip" href="./cart.html" data-ripple>
+            Səbət
+            <span class="count-badge" data-cart-count>0</span>
+          </a>
           <button class="account-button" type="button" data-ripple data-magnetic>Hesab</button>
         </div>
       </div>
@@ -224,8 +227,8 @@
             </p>
             <div class="option-list" id="detail-options"></div>
             <div class="detail-actions">
-              <button class="outline-button" type="button" data-ripple>İndi al</button>
-              <button class="buy-button" type="button" data-ripple data-magnetic>Səbətə at</button>
+              <button class="outline-button" type="button" data-ripple id="buy-now-button">İndi al</button>
+              <button class="buy-button" type="button" data-ripple data-magnetic id="add-to-cart-button">Səbətə at</button>
             </div>
           </div>
         </article>
@@ -295,9 +298,9 @@
         </div>
         <div>
           <h4>Keşf et</h4>
-          <a href="#catalog">Məhsullar</a>
-          <a href="#detail">Seçilən məhsul</a>
-          <a href="#reviews">Rəylər</a>
+          <a href="./index.html#catalog">Məhsullar</a>
+          <a href="./cart.html">Səbət</a>
+          <a href="./payment.html">Ödəniş</a>
         </div>
         <div>
           <h4>Əlaqə</h4>
@@ -311,13 +314,13 @@
     <button class="floating-chat" type="button" data-ripple data-magnetic><span class="support-orb"></span><span>Canlı Dəstək</span></button>
 
     <nav class="mobile-nav" aria-label="Mobil alt menyu">
-      <a href="#popular" class="active">Ana</a>
-      <a href="#catalog">Məhsullar</a>
-      <a href="#detail">Detallar</a>
-      <a href="#reviews">Rəylər</a>
-      <a href="#footer">Profil</a>
+      <a href="./index.html#popular" class="active">Ana</a>
+      <a href="./index.html#catalog">Məhsullar</a>
+      <a href="./cart.html">Səbət</a>
+      <a href="./payment.html">Ödəniş</a>
+      <a href="./success.html">Status</a>
     </nav>
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

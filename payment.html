@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nova Market ödəniş səhifəsi mockup." />
+    <title>Nova Market | Ödəniş</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-left" aria-hidden="true"></div>
+    <div class="page-glow glow-right" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <div class="drawer-backdrop" data-drawer-close></div>
+    <aside class="mobile-drawer" aria-hidden="true">
+      <div class="drawer-top">
+        <div class="brand">
+          <span class="brand-box">N</span>
+          <div>
+            <strong>Nova Market</strong>
+            <span>ödəniş axını</span>
+          </div>
+        </div>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Bağla">✕</button>
+      </div>
+      <label class="search-shell drawer-search">
+        <span class="search-icon">⌕</span>
+        <input type="search" placeholder="Sifarişdə məhsul axtar" />
+      </label>
+      <nav class="drawer-nav" aria-label="Mobil menyu">
+        <a href="./index.html">Ana səhifə</a>
+        <a href="./index.html#catalog">Məhsullar</a>
+        <a href="./cart.html">Səbət</a>
+        <a href="./payment.html">Ödəniş</a>
+        <a href="./success.html">Status</a>
+      </nav>
+      <button class="support-prompt" type="button" data-ripple data-magnetic>
+        <span class="support-orb"></span>
+        Canlı dəstək
+      </button>
+    </aside>
+
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="topbar-pill">Payment flow</span>
+        <p>Checkout görünüşü, metod seçimi və sifariş təsdiqi bir ekranda.</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-row">
+        <div class="header-left">
+          <button class="icon-button menu-toggle" type="button" data-drawer-open aria-label="Menyu">
+            ☰
+          </button>
+          <a class="brand" href="./index.html" aria-label="Nova Market ana səhifə">
+            <span class="brand-box">N</span>
+            <div>
+              <strong>Nova Market</strong>
+              <span>payment mockup</span>
+            </div>
+          </a>
+        </div>
+
+        <nav class="desktop-nav" aria-label="Əsas naviqasiya">
+          <a href="./index.html">Ana səhifə</a>
+          <a href="./index.html#catalog">Məhsullar</a>
+          <a href="./cart.html">Səbət</a>
+          <a href="./payment.html">Ödəniş</a>
+          <a href="./success.html">Status</a>
+        </nav>
+
+        <label class="search-shell header-search">
+          <span class="search-icon">⌕</span>
+          <input type="search" placeholder="Ödəniş axınında axtar..." />
+        </label>
+
+        <div class="header-actions">
+          <a class="action-chip" href="./payment.html" data-ripple data-cart-total>0.00 ₼</a>
+          <a class="action-chip cart-chip" href="./cart.html" data-ripple>
+            Səbət
+            <span class="count-badge" data-cart-count>0</span>
+          </a>
+          <button class="account-button" type="button" data-ripple data-magnetic>Hesab</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell subpage-shell">
+      <section class="section subpage-intro" data-reveal>
+        <p class="eyebrow">Checkout mockup</p>
+        <h1 class="subpage-title">Ödəniş səhifəsi sürətli, aydın və inamlı hiss etməlidir.</h1>
+        <p class="subpage-text">
+          Kontakt məlumatı, ödəniş üsulu və sifariş xülasəsi tək axında birləşdirildi ki, istifadəçi itməmiş tamamlaya bilsin.
+        </p>
+      </section>
+
+      <section class="section payment-layout">
+        <form class="payment-form glow-surface" data-reveal data-glow id="payment-form">
+          <div class="panel-heading">
+            <div>
+              <p class="mini-kicker">Ödəniş məlumatı</p>
+              <h2>Sifarişi tamamla</h2>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Ad və soyad</span>
+              <input type="text" id="customer-name" placeholder="Elsun Baxşiyev" required />
+            </label>
+            <label>
+              <span>Telefon</span>
+              <input type="tel" id="customer-phone" placeholder="+994 50 000 00 00" required />
+            </label>
+            <label class="full-field">
+              <span>Email</span>
+              <input type="email" id="customer-email" placeholder="mail@example.com" required />
+            </label>
+          </div>
+
+          <div class="method-block">
+            <div class="method-heading">
+              <p class="mini-kicker">Ödəniş üsulu</p>
+              <span class="method-note">Mockup seçim</span>
+            </div>
+            <div class="method-grid">
+              <button class="method-card active" type="button" data-method="card" data-ripple>
+                <strong>Bank kartı</strong>
+                <span>Visa / Mastercard</span>
+              </button>
+              <button class="method-card" type="button" data-method="transfer" data-ripple>
+                <strong>Köçürmə</strong>
+                <span>Birbaşa transfer</span>
+              </button>
+              <button class="method-card" type="button" data-method="wallet" data-ripple>
+                <strong>E-wallet</strong>
+                <span>Bir kliklə ödəniş</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              <span>Kart nömrəsi</span>
+              <input type="text" placeholder="4242 4242 4242 4242" />
+            </label>
+            <label>
+              <span>Bitmə tarixi</span>
+              <input type="text" placeholder="08/29" />
+            </label>
+            <label>
+              <span>CVV</span>
+              <input type="text" placeholder="123" />
+            </label>
+            <label>
+              <span>Promo kod</span>
+              <input type="text" placeholder="BASED10" />
+            </label>
+          </div>
+
+          <div class="method-block">
+            <div class="method-heading">
+              <p class="mini-kicker">Aktivasiya formatı</p>
+              <span class="method-note">Məhsula uyğun çatdırılma</span>
+            </div>
+            <div class="activation-pills">
+              <span>Email ilə təhvil</span>
+              <span>WhatsApp təsdiqi</span>
+              <span>5-15 dəqiqə aktivasiya</span>
+            </div>
+          </div>
+
+          <button class="buy-button full-width-button" type="submit" data-ripple data-magnetic>
+            Ödənişi tamamla
+          </button>
+        </form>
+
+        <aside class="summary-panel glow-surface" data-reveal data-glow>
+          <p class="mini-kicker">Order summary</p>
+          <h2>Sifariş</h2>
+          <div id="payment-items" class="payment-items"></div>
+          <div class="summary-rows">
+            <div><span>Ara cəm</span><strong id="payment-subtotal">0.00 ₼</strong></div>
+            <div><span>Xidmət haqqı</span><strong id="payment-service-fee">0.00 ₼</strong></div>
+            <div><span>Endirim</span><strong id="payment-discount">0.00 ₼</strong></div>
+          </div>
+          <div class="summary-total">
+            <span>Ümumi</span>
+            <strong id="payment-total">0.00 ₼</strong>
+          </div>
+          <a class="outline-button full-width-button" href="./cart.html" data-ripple>
+            Səbətə qayıt
+          </a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-box">N</span>
+            <div>
+              <strong>Nova Market</strong>
+              <span>payment mockup</span>
+            </div>
+          </div>
+          <p>Ödəniş səhifəsi real flow kimi görünməsi üçün form və summary birlikdə quruldu.</p>
+        </div>
+        <div>
+          <h4>Flow</h4>
+          <a href="./index.html">Ana səhifə</a>
+          <a href="./cart.html">Səbət</a>
+          <a href="./success.html">Status</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="floating-chat" type="button" data-ripple data-magnetic>
+      <span class="support-orb"></span>
+      <span>Canlı Dəstək</span>
+    </button>
+
+    <nav class="mobile-nav" aria-label="Mobil alt menyu">
+      <a href="./index.html">Ana</a>
+      <a href="./index.html#catalog">Məhsullar</a>
+      <a href="./cart.html">Səbət</a>
+      <a href="./payment.html" class="active">Ödəniş</a>
+      <a href="./success.html">Status</a>
+    </nav>
+
+    <script type="module" src="./payment.js"></script>
+  </body>
+</html>

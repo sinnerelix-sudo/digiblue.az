@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nova Market sifariş uğurlu səhifəsi mockup." />
+    <title>Nova Market | Sifariş uğurlu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-left" aria-hidden="true"></div>
+    <div class="page-glow glow-right" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header site-header-static">
+      <div class="header-row">
+        <div class="header-left">
+          <a class="brand" href="./index.html" aria-label="Nova Market ana səhifə">
+            <span class="brand-box">N</span>
+            <div>
+              <strong>Nova Market</strong>
+              <span>success flow</span>
+            </div>
+          </a>
+        </div>
+
+        <nav class="desktop-nav" aria-label="Əsas naviqasiya">
+          <a href="./index.html">Ana səhifə</a>
+          <a href="./cart.html">Səbət</a>
+          <a href="./payment.html">Ödəniş</a>
+          <a href="./success.html">Status</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="action-chip" href="./index.html" data-ripple>Mağazaya qayıt</a>
+          <a class="action-chip cart-chip" href="./cart.html" data-ripple>
+            Səbət
+            <span class="count-badge" data-cart-count>0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell subpage-shell">
+      <section class="section success-layout">
+        <article class="success-card glow-surface" data-reveal data-glow>
+          <div class="success-icon">✓</div>
+          <p class="eyebrow">Order completed</p>
+          <h1 class="subpage-title">Sifariş uğurla tamamlandı.</h1>
+          <p class="subpage-text">
+            Bu səhifə istifadəçiyə ödənişdən sonra inam verir və növbəti addımları aydın göstərir.
+          </p>
+
+          <div id="success-order-meta" class="success-meta"></div>
+
+          <div class="success-actions">
+            <a class="primary-button" href="./index.html" data-ripple data-magnetic>Mağazaya qayıt</a>
+            <a class="secondary-button" href="./cart.html" data-ripple>Yeni səbət qur</a>
+          </div>
+        </article>
+
+        <aside class="summary-panel glow-surface" data-reveal data-glow>
+          <p class="mini-kicker">Sifariş xülasəsi</p>
+          <h2>Detallar</h2>
+          <div id="success-items" class="payment-items"></div>
+          <div class="summary-total">
+            <span>Ödənildi</span>
+            <strong id="success-total">0.00 ₼</strong>
+          </div>
+          <div class="trust-list">
+            <span>Aktivasiya 5-15 dəq</span>
+            <span>Email / WhatsApp bildirişi</span>
+            <span>Premium support flow</span>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-box">N</span>
+            <div>
+              <strong>Nova Market</strong>
+              <span>success mockup</span>
+            </div>
+          </div>
+          <p>Uğurlu sifariş səhifəsi istifadəçiyə status və inam hissi vermək üçün əlavə edildi.</p>
+        </div>
+      </div>
+    </footer>
+
+    <nav class="mobile-nav" aria-label="Mobil alt menyu">
+      <a href="./index.html">Ana</a>
+      <a href="./cart.html">Səbət</a>
+      <a href="./payment.html">Ödəniş</a>
+      <a href="./success.html" class="active">Status</a>
+    </nav>
+
+    <script type="module" src="./success.js"></script>
+  </body>
+</html>
