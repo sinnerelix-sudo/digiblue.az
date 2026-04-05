@@ -655,6 +655,11 @@ Bu hisse bu thread daxilinde son vacib addimlari ve user-in operational qaydalar
 - Sonra `npm.cmd run dev` ile yeniden yoxlanildi.
 - Netice olaraq repo-da `package.json` olmadigi ucun komanda `ENOENT` ile dayandi.
 - Bu repo hal-hazirda Node layihesi deyil, statik HTML CSS JS mockup-dir.
+- User sayti telefondan baxmaq ucun ayaqa qaldirmaqi istedi.
+- `ipconfig` ile aktiv lokal IPv4 kimi `192.168.100.8` tesbit edildi.
+- `http://127.0.0.1:4173/index.html` ilkin yoxlamada aciq deyildi.
+- `py -m http.server 4173 --bind 0.0.0.0` yeni proses kimi qaldirildi.
+- Sonra hem `http://127.0.0.1:4173/index.html`, hem de `http://192.168.100.8:4173/index.html` `200` qaytardi.
 
 ## 19. Copy-Paste Prompt For The Next Codex
 

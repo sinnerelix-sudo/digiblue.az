@@ -106,3 +106,7 @@ Latest sync context:
 - Birbasa `npm` PowerShell execution policy sebebile islemədi.
 - `npm.cmd run dev` ile tekrar yoxlananda `package.json` olmadigi ucun `ENOENT` qaytardi.
 - Netice: repo statikdir, bu qovluqda `npm run dev` axini yoxdur.
+- Telefon baxisi ucun lokal server qaldirildi.
+- Aktiv lokal IPv4 `192.168.100.8` olaraq gorundu.
+- `py -m http.server 4173 --bind 0.0.0.0` ile server qaldirildi.
+- `127.0.0.1:4173/index.html` ve `192.168.100.8:4173/index.html` her ikisi `200` qaytardi.
