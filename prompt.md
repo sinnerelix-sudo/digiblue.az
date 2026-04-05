@@ -1,6 +1,6 @@
 # MASTER HANDOFF FOR NEXT CODEX
 
-Bu fayl bu repo ucun "single source of truth" sayilir. Basqa chat-de ve ya basqa hesabda acilan Codex bu fayli tam oxumadan ishe baslamasin.
+Bu fayl bu repo ucun single source of truth sayilir. Basqa chat-de ve ya basqa hesabda acilan Codex bu fayli tam oxumadan ishe baslamasin.
 
 Bu handoffun meqsedi:
 - istifadeci ile indiye qeder olan butun konteksti itirmemek
@@ -18,7 +18,7 @@ Texnologiya secimi qesden sade saxlanilib:
 - framework yoxdur
 - build sistemi yoxdur
 - statik `HTML + CSS + JS modules`
-- prioritet: maksimum suret, az donma, rahat mobil hiss, asan davam etdirme
+- prioritet: maksimum suret, az donma, rahat mobil hiss, asan davam etdirmek
 
 Repo:
 - GitHub: `https://github.com/sinnerelix-sudo/digiblue.az`
@@ -34,6 +34,7 @@ Hazirki known git tarixi:
 - `af991b3` - `Add cart and payment flow pages`
 - `e889d0b` - `Tighten mobile layout and fix overflow`
 - `726bb66` - `Add Codex handoff prompt`
+- `675e0d9` - `Strengthen Codex handoff context`
 
 Vacib:
 - `.codex/` qovlugu lokalda var, amma qesden repo-ya daxil edilmeyib
@@ -45,7 +46,7 @@ Istifadeci Azerbaycan dilinde yazir ve qisa, konkret, praktik netice isteyir.
 
 Istifadeci ucun en vacib prioritetler:
 - based.az kimi qurulus
-- telefonda yigmaq, sixed, rahat marketplace hissi
+- telefonda yigmaq, six, rahat marketplace hissi
 - desktop-da da premium ve temiz gorunus
 - cox guclu animasiyalar
 - buton click hissi yuksek seviyyede olsun
@@ -59,7 +60,7 @@ Istifadeci mevcut dizayni beyendi. Ona gore:
 - reng sistemini dagitmaq olmaz
 - animasiyalari zeyifletmek olmaz
 - based.az referensinden uzaqlasmaq olmaz
-- "modernlesdirmek" bahanesi ile butun UI-ni yeniden yazmaq olmaz
+- modernlesdirmek bahanesi ile butun UI-ni yeniden yazmaq olmaz
 
 Istifadeci defelerle bildirib ki:
 - bu dizayn ve kodlar qorunsun
@@ -74,7 +75,7 @@ Bu hissede indiye qeder istifadecinin esas istedikleri ardicil toplanib.
 
 Istifadeci dedi ki:
 - based.az kimi cox sade amma elverisli sayt lazimdir
-- animasiya ve buton click hissi "mukemmel" olsun
+- animasiya ve buton click hissi mukemmel olsun
 - saytda hereket cox suretli olsun
 - donma, loading hissi olmasin
 - telefon ekraninda mobil app kimi hiss olunsun
@@ -89,7 +90,7 @@ Istifadeci ilk premium landing kimi hazirlanan versiyani beyendi, amma dedi ki:
 - based.az-dan ilham almaq olar
 - satilan seyler: instagram xidmeti, netflix hesabi, instagram hesabi ve s.
 - sayt qurulusu based.az kimi olsun
-- rahat, yigmaq, ama cox guzel animasiyali olsun
+- rahat, yigmaq, amma cox guzel animasiyali olsun
 
 Istifadeci based.az-dan bir nece mobil ve desktop screenshot gonderdi ve bunlari vizual referens kimi verdi.
 
@@ -97,7 +98,7 @@ Istifadeci based.az-dan bir nece mobil ve desktop screenshot gonderdi ve bunlari
 
 Istifadeci aciq dedi:
 - sayt yeni versiyada beyenilib
-- "bunu deyismeden github-da yaz qalsin"
+- bunu deyismeden github-da yaz qalsin
 - butun deyisiklikler repo tarixcesinde qalsin
 
 ### 3.4 New pages isteyi
@@ -119,7 +120,7 @@ Istifadeci dedi:
 ### 3.6 Mobil xeta reportu
 
 Sonra istifadeci konkret xetalar dedi:
-- Elaqe bolmesinde altda mail adresi ekrandan kenara dasir
+- elaqe bolmesinde altda mail adresi ekrandan kenara dasir
 - bu ekranin enini boyudur
 - canli destek butonu altda kenardadir
 - nav bar da kenardadir
@@ -137,17 +138,25 @@ Istifadeci sonra dedi:
 - basqa hesabdaki Codex hecneyi deyismesin
 - her yenilikde bu `.md` fayli yenilensin
 
-### 3.8 Bu anki son istek
+### 3.8 Stronger handoff isteyi
 
-Indi istifadeci dedi:
+Istifadeci daha sonra dedi:
 - handoff daha da guclendirilsin
-- basqa chat-e kecilir
+- basqa chat-e kecid oluna biler
 - handoffun icine indiye qeder ne istediyi yazilsin
 - menim ne etdiyim yazilsin
 - gelecek planlarim yazilsin
-- hecne itməsin
+- hec ne itməsin
 
-Bu fayl mehz buna gore tam genislendirildi.
+### 3.9 Current thread continuity isteyi
+
+Indi istifadeci dedi:
+- bu chat deyisdirilmeyecek, eyni thread-den davam olunacaq
+- context automatically compacted olanda detail itmemelidir
+- her komanda qabaqcadan `prompt.md`-e baxilsin
+- her emrin icrasindan sonra `prompt.md`-e qeyd yazilsin
+
+Bu fayl mehz buna gore daha da guclendirildi.
 
 ## 4. What Was Built So Far
 
@@ -166,10 +175,10 @@ Esas xususiyyetler:
 - ripple effect
 - magnetic button hissi
 - premium qaranliq palitra
-- mobil dock/alt nav hissi
+- mobil dock ve alt nav hissi
 - telefon maketi ve hero sahesi
 
-Bu versiya daha "vibe" ve "direction" kimi idi.
+Bu versiya daha cox vibe ve direction kimi idi.
 
 ### 4.2 Real marketplace mockup conversion
 
@@ -179,13 +188,13 @@ Elave olundu:
 - based.az ritminde header
 - search sahesi
 - kateqoriya zolagi
-- kampaniya/banner bloklari
+- kampaniya banner bloklari
 - mehsul grid-i
 - secilen mehsul detail sahesi
 - review hissesi
 - footer
 - canli destek bubble
-- drawer/menu
+- drawer menu
 
 Mehsul tipleri kimi mockup daxilinde istifadecinin dediyi istiqamet goturuldu:
 - Instagram xidmetleri
@@ -198,7 +207,7 @@ Mehsul tipleri kimi mockup daxilinde istifadecinin dediyi istiqamet goturuldu:
 
 ### 4.3 GitHub preservation
 
-Istifadecinin "deyismeden github-da yaz" isteyine uygun olaraq:
+Istifadecinin bunu deyismeden github-da yaz isteyine uygun olaraq:
 - fayllar git history-e salindi
 - repo-ya push olundu
 - local design qorundu
@@ -240,12 +249,12 @@ Istifadecinin report etdiyi mobil xetalara gore fix edildi:
 - floating canli destek bubble-in viewport-dan cixmasi
 - mobile nav-in kenara dasmasi
 - mobil spacing-in cox bos qalmasi
-- umumilikde based.az tipli yigcam hissin artirilmasi
+- based.az tipli yigcam hissin artirilmasi
 
 Edilen konkret vizual duzelisler:
 - footer linklerinde `overflow-wrap` ve `word-break`
-- mobile nav daha yigmaq
-- floating chat daha kompakt
+- mobile nav daha yigmaq edildi
+- floating chat daha kompakt edildi
 - `topbar` mobilde gizledildi
 - mobile padding ve gap-lar sixlasdirildi
 - kartlarin olculeri mobilde yigildi
@@ -261,9 +270,9 @@ Istifadecinin isteyine gore ilk `prompt.md` yaradildi:
 - change log
 - basqa Codex ucun copy-paste prompt
 
-### 4.7 Current stronger handoff
+### 4.7 Stronger handoff
 
-Bu cari update ile `prompt.md` daha da guclendirildi:
+Sonra `prompt.md` daha da guclendirildi:
 - tam tarixce yazildi
 - istifadecinin istedikleri tek-tek toplandi
 - menim etdiyim isler ardicil qeyd olundu
@@ -282,26 +291,33 @@ Bu thread boyunca istifadeciye run ve baxis ucun bu destek de verilib:
 - sehifelerin acildigi ve JS parse olundugu yoxlanilib
 - telefondan baxmaq ucun lokal IP de verilib
 
+### 4.9 Current continuity protocol
+
+Indi user-in yeni isteyine gore:
+- bu thread ucun `prompt.md` her tapshirigin basinda oxunmalidir
+- her komanda ve ya menali komanda batch-indan sonra `prompt.md`-de qeyd dusulmelidir
+- meqsed context compacted olanda butun detalin qalmasidir
+
 ## 5. Current File Map
 
 Bu hissede repo-daki esas fayllarin rolu yazilir.
 
 - [index.html](C:/Users/User/Documents/Playground/index.html)
-  - ana marketplace/home page
-  - header, search, category strip, hero/campaign, products, detail, reviews, footer, mobile nav
+  - ana marketplace home page
+  - header, search, category strip, hero, products, detail, reviews, footer, mobile nav
 
 - [styles.css](C:/Users/User/Documents/Playground/styles.css)
   - butun dizayn sistemi
   - responsive davranis
-  - motion/reveal/ripple/glow stilleri
+  - motion, reveal, ripple, glow stilleri
   - mobile compact rules
   - footer overflow fixleri
   - floating chat ve mobile nav sizing
 
 - [script.js](C:/Users/User/Documents/Playground/script.js)
-  - ana sehifede product select/detail update
+  - ana sehifede product select ve detail update
   - option render
-  - "indi al" ve "sebete at" hereketleri
+  - indi al ve sebete at hereketleri
 
 - [store.js](C:/Users/User/Documents/Playground/store.js)
   - product catalog source
@@ -315,8 +331,8 @@ Bu hissede repo-daki esas fayllarin rolu yazilir.
   - magnetic movement
   - glow tracking
   - reveal observer
-  - drawer open/close
-  - cart badge/total sync
+  - drawer open close
+  - cart badge total sync
   - toast stack
 
 - [cart.html](C:/Users/User/Documents/Playground/cart.html)
@@ -324,12 +340,12 @@ Bu hissede repo-daki esas fayllarin rolu yazilir.
 
 - [cart.js](C:/Users/User/Documents/Playground/cart.js)
   - sebet render
-  - say artir/azalt
+  - say artir azalt
   - sil
   - clear cart
 
 - [payment.html](C:/Users/User/Documents/Playground/payment.html)
-  - checkout/odenis UI
+  - checkout ve odenis UI
 
 - [payment.js](C:/Users/User/Documents/Playground/payment.js)
   - checkout summary
@@ -345,19 +361,20 @@ Bu hissede repo-daki esas fayllarin rolu yazilir.
 - [prompt.md](C:/Users/User/Documents/Playground/prompt.md)
   - bu handoff fayli
   - her deyisiklikde yenilenmelidir
+  - bu thread ucun continuity log kimi de istifade olunmalidir
 
 ## 6. Current Functionality
 
 Hazirda mockup-da bunlar isleyir:
 - mehsul kart grid-i
 - secilen karta gore detail sahesinin yenilenmesi
-- option/muddet secimi
+- option ve muddet secimi
 - sebete elave etme
-- "indi al" axini
+- indi al axini
 - localStorage-da sebetin saxlanmasi
 - sebet count ve subtotal sync
 - cart page
-- miqdar artirma/azaltma
+- miqdar artirma ve azaltma
 - mehsul silme
 - cart temizleme
 - payment page
@@ -372,7 +389,7 @@ Hazirda mockup-da bunlar isleyir:
 - toast
 - mobile alt nav
 
-Bu layihe hazirda tam production commerce deyil, premium UI mockup + working client-side flow seviyyesindedir.
+Bu layihe hazirda tam production commerce deyil, premium UI mockup plus working client-side flow seviyyesindedir.
 
 ## 7. Visual System That Must Be Preserved
 
@@ -394,10 +411,10 @@ Qorunmali reng sistemi:
 - esas sari accent: `#ffc71d`
 - ikinci sari ton: `#ffde67`
 - support purple: `#7565ff`
-- yasimtil status green: `#46d39c`
-- yumsaq muted bej/soft text tonlari
+- status green: `#46d39c`
+- yumsaq muted soft text tonlari
 
-Sari accent bu site-in kimliyidir. Basqa ana rengle evez etme.
+Sari accent bu sayt-in kimliyidir. Basqa ana rengle evez etme.
 
 ### 7.3 Surface language
 
@@ -407,7 +424,7 @@ Qorunmali hiss:
 - yumsaq shadow
 - kontrollu glow
 - radius-lar yumsaq ve premium
-- butonlar toxunulası gorunmelidir
+- butonlar toxunulasi gorunmelidir
 
 Glassmorphism ve ya cox aciq fonlu yeni dizayn diline kecme.
 
@@ -429,7 +446,7 @@ Qorunmali kompozisiya:
 - sticky header
 - axtaris sahesi
 - category strip
-- campaign/hero
+- campaign hero
 - mehsul kart grid-i
 - secilen mehsul detail paneli
 - review hissesi
@@ -453,7 +470,7 @@ Qaydalar:
 - spacing desktop-un kicildilmis versiyasi kimi yox, mobil ucun ayrica sixlasdirilmis olmalidir
 
 Based.az referensinden alinmali hiss:
-- cox informasiyali ama qarisiq olmayan ekran
+- cox informasiyali amma qarisiq olmayan ekran
 - qisa spacing
 - rahat axtaris
 - ekranda cox bosluq olmadan premium ritm
@@ -461,7 +478,6 @@ Based.az referensinden alinmali hiss:
 ## 9. Known Reference Material
 
 Istifadeci based.az-a aid bir nece screenshot gonderib. Bunlar bu handoff ucun vacib vizual referensdir:
-
 - `C:\Users\User\Pictures\Yeni qovluq\1000401245.jpg`
 - `C:\Users\User\Pictures\Yeni qovluq\1000401246.jpg`
 - `C:\Users\User\Pictures\Yeni qovluq\1000401247.jpg`
@@ -473,18 +489,18 @@ Thread daxilinde daha once hem mobil, hem desktop based.az screenshot-lari de go
 Bu screenshot-lardan cixan esas netice:
 - telefon UI-si yigcamdir
 - axtaris ve ust nav qisa ve rahatdir
-- mehsul kartlari boyuk amma sixed ritmde duzulub
+- mehsul kartlari boyuk amma six ritmde duzulub
 - alt nav mobilde cox vacibdir
-- chat/support elementi vardir
+- chat support elementi vardir
 - detail sehifede mehsul secimi, qiymet ve CTA aydindir
 
 ## 10. QA And Verification Workflow
 
-Hər yeni deyisiklikden sonra minimum bunlari yoxla:
+Her yeni deyisiklikden sonra minimum bunlari yoxla.
 
 ### 10.1 Local run
 
-Bu repo static-dir. Adeten belə run edilib:
+Bu repo static-dir. Adeten bele run edilib:
 
 ```powershell
 python -m http.server 4173
@@ -498,10 +514,10 @@ Sonra:
 
 ### 10.2 Phone access
 
-Bir merheledə telefon ucun lokal IP verilib:
+Bir merhelede telefon ucun lokal IP verilib:
 - `http://192.168.100.8:4173`
 
-Bu IP deyişken ola biler. Gelecek Codex yeni IP-ni dynamic olaraq tapmalidir, bunu hardcoded dogma qebul etməsin.
+Bu IP deyisken ola biler. Gelecek Codex yeni IP-ni dynamic olaraq tapmalidir, bunu hardcoded dogma qebul etmesin.
 
 ### 10.3 Functional checks
 
@@ -511,8 +527,8 @@ Minimum yoxla:
 - home page product secimi isleyir
 - `Sebete at` isleyir
 - `Indi al` payment axinina aparir
-- cart total/count duz hesablanir
-- payment -> success axini qirilmayib
+- cart total count duz hesablanir
+- payment to success axini qirilmayib
 - mobile nav gorunur
 - footer overflow etmir
 - floating chat kenara cixmir
@@ -520,8 +536,7 @@ Minimum yoxla:
 ## 11. Git And Change Management Rules
 
 Bu repo-da isleyende bu qaydalari pozma:
-
-- istifadeci istemeyince dizayni kaskin deyişme
+- istifadeci istemeyince dizayni kaskin deyisme
 - istifadeci istemeyince framework elave etme
 - tesadufi refactor etme
 - basqasinin deyisikliyini geri alma
@@ -530,7 +545,7 @@ Bu repo-da isleyende bu qaydalari pozma:
 - mumkundurse git history temiz, konkret ve niyyetli qalsin
 
 Praktik qeyd:
-- bu masinda git bəzən `.git/index.lock` permission problemi vere biler
+- bu masinda git bezen `.git/index.lock` permission problemi vere biler
 - bele halda shell icin escalation teleb oluna biler
 
 ## 12. What Must NOT Be Changed
@@ -538,20 +553,20 @@ Praktik qeyd:
 Bu hisseni qisa yox, sert qayda kimi oxu.
 
 Etme:
-- React / Next / Vite elave etme
+- React, Next, Vite elave etme
 - Tailwind-e kecirme
 - font degisdirme
 - sari ana accent-i deyisdirme
 - qaranliq premium sistemi pozma
 - floating canli destek elementini silme
 - mobile nav-i legv etme
-- based.az tipli yigcamliyi itirme
+- based.az tipli yigcamligi itirme
 - animasiya dilini zeyifletme
 - buton click hissini azaltma
-- butun CSS-i "temizlemek" adiyla strukturu dagitma
+- butun CSS-i temizlemek adiyla strukturu dagitma
 - localStorage sebet axinini qirma
 
-Bu layihe "yeniden dusunulmus design concept" istemir. Bu layihe "mevcut premium mockup-u eyni ruhla genisletmek" ister.
+Bu layihe yeniden dusunulmus design concept istemir. Bu layihe mevcut premium mockup-u eyni ruhla genisletmek ister.
 
 ## 13. Suggested Next Steps That Were Already Discussed
 
@@ -579,17 +594,17 @@ Real marketplace mockup qurulduqdan sonra teklif edilen istiqametler:
 
 ### 13.3 Commerce-flow stage ideas
 
-Cart/payment flow-dan sonra teklif edilen istiqametler:
-- login/profile sehifesi
+Cart payment flow-dan sonra teklif edilen istiqametler:
+- login profile sehifesi
 - sifaris tarixcesi
 
 ### 13.4 Hala meqbul olan gelecek roadmap
 
 Eger istifadeci davam etmek istese, bu ardicilliq uyqun olar:
 1. Product detail ucun ayrica sehife
-2. Search results / category sehifesi
+2. Search results ve category sehifesi
 3. Filter ve sorting
-4. Login / account mockup
+4. Login ve account mockup
 5. Order history
 6. Vercel deploy
 7. Figma sync
@@ -602,7 +617,7 @@ Gelecek Codex bunlari default qebul ede biler:
 - istifadeci hereketli, premium, tunde UI sevir
 - o, based.az mobil ritmini esas benchmark sayir
 - sadelik deyende darixdirici sade UI demir
-- o, "real gore bileceyi mockup" isteyir
+- o, real gore bileceyi mockup isteyir
 - layiheni framework-siz saxlamaq indiki halda duzgun qerardir
 - design consistency burada technical novelty-den daha vacibdir
 
@@ -622,30 +637,60 @@ Bu hisseni her menali update-den sonra yenile.
 - Footer mail, floating support ve mobile nav compact edildi.
 - Ilk `prompt.md` handoff fayli yaradildi.
 - Bu fayl daha da guclendirildi ve tam tarixce, user intent, qurulan seyler ve gelecek planlar daxil edildi.
+- User-in yeni continuity qaydasi elave edildi: bu thread-den davam edilir, her tapshirigin evvelinde `prompt.md` oxunur, her emrden ve ya menali komanda batch-indan sonra `prompt.md` yenilenir.
 
 ## 16. Mandatory Update Rule For Future Codex
 
 Eger repo-da her hansisa degisiklik etdinse:
 - `prompt.md`-ni de yenile
 - `Current Change Log` hissesine yeni qeyd elave et
-- vacibdirsə yeni sectionlara da kontekst yaz
+- vacibdirse yeni sectionlara da kontekst yaz
 
 Bu qayda istifadecinin birbasa isteyidir. Pozma.
 
-## 17. Copy-Paste Prompt For The Next Codex
+## 17. Session Continuity Rule For This Thread
+
+Istifadeci aciq sekilde bildirib ki bu eyni thread-den davam edilacak ve `Context automatically compacted` halinda detal itmemelidir.
+
+Bu thread ucun mecburi qayda:
+- her yeni user tapshirigindan once `prompt.md` oxu
+- her komanda ve ya her menali komanda batch-indan sonra `prompt.md`-de qisa amma konkret qeyd yaz
+- hec bir vacib niyyet, qerar, bug, fix, yoxlama neticesi ve ya user tercihi yalniz chat mesajlarinda qalmasin
+- `prompt.md` bu thread ucun davamli yaddaş mexanizmi kimi istifade olunsun
+
+Praktik icra formasi:
+- once `prompt.md`-ni oxu
+- sonra komandalari ve ya fayl deyisikliklerini et
+- sonra `prompt.md`-de execution note elave et
+- eger deyisiklik repo ucun onemlidirse `Current Change Log` hissesini de yenile
+
+## 18. Session Execution Notes
+
+Bu hisse bu thread daxilinde son vacib addimlari ve user-in operational qaydalarini qisa qeyd etmek ucundur.
+
+### 2026-04-05
+
+- User bildirdi ki chat deyisdirilmeyecek, eyni thread-den davam edilecek.
+- User xususi qayda qoydu ki her tapshiriga ve her emre baslamazdan once `prompt.md` oxunmalidir.
+- User xususi qayda qoydu ki her emrin icrasindan sonra `prompt.md`-ye qeyd dusulmelidir.
+- Meqsed odur ki `Context automatically compacted` olanda hec bir detail itmesin.
+- Bu operational continuity qaydasi bu fayla elave olundu.
+- `prompt.md` bu continuity qaydasina uygun olaraq yeniden temizlenib guclendirildi.
+
+## 19. Copy-Paste Prompt For The Next Codex
 
 Asagidaki metni basqa chat-deki Codex-e birbasa vermek olar:
 
-> Bu repo-da ishe baslamazdan once `C:\Users\User\Documents\Playground\prompt.md` faylini tam oxu ve oradaki butun qaydalara emel et. Bu layihə based.az ritminde, amma daha premium animasiya ve click feedback-e sahib statik `HTML + CSS + JS` marketplace mockup-dir. Istifadeci mevcut dizayni beyənib, ona gore reng sistemini, fontlari (`Manrope`, `Sora`), sari CTA-lari, dark premium panel sistemini, purple support glow-u, ripple/magnetic/reveal animasiyalarini ve mobil yigcamligi qoru. Hech bir random redesign etme, framework elave etme, mobile qurulusu pozma, based.az referensinden uzaqlasma. Repo-da indiye qeder neler istendiyini, neler quruldugunu, commit tarixini, bug fixleri, future roadmap-i ve qorunmali hisseleri `prompt.md` daxilinde goreceksen. Her yeni deyisiklikden sonra `prompt.md`-ni de mutleq yenile. Mevcut sayti basqa sayt kimi deyil, eyni dilde genisleyen premium marketplace kimi davam etdir.
+> Bu repo-da ishe baslamazdan once `C:\Users\User\Documents\Playground\prompt.md` faylini tam oxu ve oradaki butun qaydalara emel et. Bu layihe based.az ritminde, amma daha premium animasiya ve click feedback-e sahib statik `HTML + CSS + JS` marketplace mockup-dir. Istifadeci mevcut dizayni beyənib, ona gore reng sistemini, fontlari (`Manrope`, `Sora`), sari CTA-lari, dark premium panel sistemini, purple support glow-u, ripple, magnetic, reveal animasiyalarini ve mobil yigcamligi qoru. Hech bir random redesign etme, framework elave etme, mobile qurulusu pozma, based.az referensinden uzaqlasma. Repo-da indiye qeder neler istendiyini, neler quruldugunu, commit tarixini, bug fixleri, future roadmap-i ve qorunmali hisseleri `prompt.md` daxilinde goreceksen. Her yeni deyisiklikden sonra `prompt.md`-ni de mutleq yenile. Bu thread daxilinde her tapshirigin evvelinde `prompt.md`-ni oxu ve her emrden ve ya menali komanda batch-indan sonra `prompt.md`-ye execution note yaz.
 
-## 18. Final Reminder To The Next Codex
+## 20. Final Reminder To The Next Codex
 
 Bu repo-da esasy ugur kriteriyasi budur:
-- istifadeci acib baxanda "he, bu ele eyni saytdir, sadece daha tamamlanib" desin
+- istifadeci acib baxanda he, bu ele eyni saytdir, sadece daha tamamlanib desin
 
 Yox eger:
-- "bu niye tamam ferqli olub?"
-- "animasiyalar niye zeyifleyib?"
-- "mobil niye based.az kimi yigcam deyil?"
+- bu niye tamam ferqli olub
+- animasiyalar niye zeyifleyib
+- mobil niye based.az kimi yigcam deyil
 
 kimi reaksiya yaradacaqsa, demeli dogru istiqametde getmirsən.
