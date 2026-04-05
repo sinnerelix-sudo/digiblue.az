@@ -650,6 +650,11 @@ Bu hisse bu thread daxilinde son vacib addimlari ve user-in operational qaydalar
 - `prompt.md` guclendirildi ve continuity source kimi istifade edildi.
 - Sonra eyni melumat `AGENTS.md`-e dasindi ki Codex onu autoload etsin.
 - Daha sonra `prompt.md` backup mirror faylina cevrildi ve primary source kimi `AGENTS.md` secildi.
+- User `npm run dev` istedi.
+- Birbasa `npm run dev` PowerShell execution policy sebebile islemədi.
+- Sonra `npm.cmd run dev` ile yeniden yoxlanildi.
+- Netice olaraq repo-da `package.json` olmadigi ucun komanda `ENOENT` ile dayandi.
+- Bu repo hal-hazirda Node layihesi deyil, statik HTML CSS JS mockup-dir.
 
 ## 19. Copy-Paste Prompt For The Next Codex
 

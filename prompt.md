@@ -102,3 +102,7 @@ Latest sync context:
 - `prompt.md`-deki handoff melumatlari `AGENTS.md`-e dasinib.
 - `AGENTS.md` primary autoload fayl kimi qebul olunub.
 - Bu fayl backup pointer ve mirror statusuna kecirilib.
+- `npm run dev` yoxlanildi.
+- Birbasa `npm` PowerShell execution policy sebebile islemədi.
+- `npm.cmd run dev` ile tekrar yoxlananda `package.json` olmadigi ucun `ENOENT` qaytardi.
+- Netice: repo statikdir, bu qovluqda `npm run dev` axini yoxdur.
