@@ -608,6 +608,8 @@ Bu hisseni her menali update-den sonra yenile.
 - Bu fayl daha da guclendirildi ve tam tarixce, user intent, qurulan seyler ve gelecek planlar daxil edildi.
 - User-in yeni continuity qaydasi elave edildi: bu thread-den davam edilir, her tapshirigin evvelinde handoff fayli oxunur, her emrden ve ya menali komanda batch-indan sonra handoff fayli yenilenir.
 - `prompt.md`-deki esas kontekst `AGENTS.md`-e dasindi ki Codex onu autoload source kimi her defe oxusun.
+- Home page funksionalligi guclendirildi: live search, real filterler, sorting, netice sayi, bos netice state-i ve son baxilanlar hissesi elave edildi.
+- Mobil rahatliq ucun detail action hissesi daha yapisqan ve rahat toxunulan hala getirildi.
 
 ## 16. Mandatory Update Rule For Future Codex
 
@@ -660,6 +662,12 @@ Bu hisse bu thread daxilinde son vacib addimlari ve user-in operational qaydalar
 - `http://127.0.0.1:4173/index.html` ilkin yoxlamada aciq deyildi.
 - `py -m http.server 4173 --bind 0.0.0.0` yeni proses kimi qaldirildi.
 - Sonra hem `http://127.0.0.1:4173/index.html`, hem de `http://192.168.100.8:4173/index.html` `200` qaytardi.
+- User saytin daha da funksional olmasini ve xususen telefonda daha rahat olmasini istedi.
+- `index.html`, `styles.css` ve `script.js` yenilendi.
+- Home page ucun live axtaris, islek filterler, sort select, bos netice state-i ve son baxilanlar rail-i elave edildi.
+- Mobilde detail action hissesi sticky rahatliq ucun guclendirildi.
+- `index.html`, `cart.html`, `payment.html`, `success.html` yeniden `200` ile yoxlanildi.
+- `script.js` sintaksisi local olaraq yoxlanildi ve temiz kecdi.
 
 ## 19. Copy-Paste Prompt For The Next Codex
 

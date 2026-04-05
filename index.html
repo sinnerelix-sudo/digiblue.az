@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Premium hesablar, sosial media xidmətləri və AI alətləri üçün marketplace mockup."
+      content="Premium hesablar, sosial media xidmetleri ve AI aletleri ucun marketplace mockup."
     />
     <title>Nova Market Mockup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,29 +31,29 @@
             <span>mockup versiya</span>
           </div>
         </div>
-        <button class="icon-button" type="button" data-drawer-close aria-label="Bağla">✕</button>
+        <button class="icon-button" type="button" data-drawer-close aria-label="Bagla">X</button>
       </div>
       <label class="search-shell drawer-search">
-        <span class="search-icon">⌕</span>
-        <input type="search" placeholder="Servis və ya məhsul axtar" />
+        <span class="search-icon">Q</span>
+        <input type="search" placeholder="Servis ve ya mehsul axtar" data-search-input />
       </label>
       <nav class="drawer-nav" aria-label="Mobil menyu">
-        <a href="./index.html#popular">Ana səhifə</a>
-        <a href="./index.html#catalog">Məhsullar</a>
-        <a href="./cart.html">Səbət</a>
-        <a href="./payment.html">Ödəniş</a>
-        <a href="./index.html#reviews">Rəylər</a>
+        <a href="./index.html#popular">Ana sehife</a>
+        <a href="./index.html#catalog">Mehsullar</a>
+        <a href="./cart.html">Sebet</a>
+        <a href="./payment.html">Odenis</a>
+        <a href="./index.html#reviews">Reyler</a>
       </nav>
       <button class="support-prompt" type="button" data-ripple data-magnetic>
         <span class="support-orb"></span>
-        Canlı dəstək
+        Canli destey
       </button>
     </aside>
 
     <div class="topbar">
       <div class="topbar-inner">
-        <span class="topbar-pill">Canlı dəstək 09:00-01:00</span>
-        <p>based.az ritmində quruluş, daha premium animasiya və daha rahat mockup hissi.</p>
+        <span class="topbar-pill">Canli destek 09:00-01:00</span>
+        <p>based.az ritminde qurulus, daha premium animasiya ve daha rahat mockup hissi.</p>
       </div>
     </div>
 
@@ -61,9 +61,9 @@
       <div class="header-row">
         <div class="header-left">
           <button class="icon-button menu-toggle" type="button" data-drawer-open aria-label="Menyu">
-            ☰
+            =
           </button>
-          <a class="brand" href="#popular" aria-label="Nova Market ana səhifə">
+          <a class="brand" href="#popular" aria-label="Nova Market ana sehife">
             <span class="brand-box">N</span>
             <div>
               <strong>Nova Market</strong>
@@ -72,23 +72,23 @@
           </a>
         </div>
 
-        <nav class="desktop-nav" aria-label="Əsas naviqasiya">
-          <a href="./index.html#popular">Ana səhifə</a>
-          <a href="./index.html#catalog">Məhsullar</a>
-          <a href="./cart.html">Səbət</a>
-          <a href="./payment.html">Ödəniş</a>
-          <a href="./index.html#reviews">Rəylər</a>
+        <nav class="desktop-nav" aria-label="Esas naviqasiya">
+          <a href="./index.html#popular">Ana sehife</a>
+          <a href="./index.html#catalog">Mehsullar</a>
+          <a href="./cart.html">Sebet</a>
+          <a href="./payment.html">Odenis</a>
+          <a href="./index.html#reviews">Reyler</a>
         </nav>
 
         <label class="search-shell header-search">
-          <span class="search-icon">⌕</span>
-          <input type="search" placeholder="Məhsul və ya xidmət axtar..." />
+          <span class="search-icon">Q</span>
+          <input type="search" placeholder="Mehsul ve ya xidmet axtar..." data-search-input />
         </label>
 
         <div class="header-actions">
-          <a class="action-chip" href="./payment.html" data-ripple data-cart-total>0.00 ₼</a>
+          <a class="action-chip" href="./payment.html" data-ripple data-cart-total>0.00 EUR</a>
           <a class="action-chip cart-chip" href="./cart.html" data-ripple>
-            Səbət
+            Sebet
             <span class="count-badge" data-cart-count>0</span>
           </a>
           <button class="account-button" type="button" data-ripple data-magnetic>Hesab</button>
@@ -99,11 +99,21 @@
     <main class="page-shell">
       <section class="category-strip section" data-reveal>
         <div class="category-track">
-          <button class="category-pill active" type="button" data-ripple><span class="dot dot-hot"></span>Ən çox satılanlar</button>
-          <button class="category-pill" type="button" data-ripple><span class="dot dot-ai"></span>AI alətləri</button>
-          <button class="category-pill" type="button" data-ripple><span class="dot dot-media"></span>Premium hesablar</button>
-          <button class="category-pill" type="button" data-ripple><span class="dot dot-social"></span>Instagram xidməti</button>
-          <button class="category-pill" type="button" data-ripple><span class="dot dot-fast"></span>Sürətli təhvil</button>
+          <button class="category-pill active" type="button" data-ripple data-filter="all">
+            <span class="dot dot-hot"></span>En cox satilanlar
+          </button>
+          <button class="category-pill" type="button" data-ripple data-filter="ai">
+            <span class="dot dot-ai"></span>AI aletleri
+          </button>
+          <button class="category-pill" type="button" data-ripple data-filter="premium">
+            <span class="dot dot-media"></span>Premium hesablar
+          </button>
+          <button class="category-pill" type="button" data-ripple data-filter="instagram">
+            <span class="dot dot-social"></span>Instagram xidmeti
+          </button>
+          <button class="category-pill" type="button" data-ripple data-filter="fast">
+            <span class="dot dot-fast"></span>Suretli tehvil
+          </button>
         </div>
       </section>
 
@@ -111,32 +121,32 @@
         <article class="campaign-banner glow-surface" data-reveal data-glow>
           <div class="banner-copy">
             <p class="eyebrow">Real marketplace mockup</p>
-            <h1>based.az quruluşunda, daha premium animasiyalı satış səhifəsi.</h1>
+            <h1>based.az qurulusunda, daha premium animasiyali satis sehifesi.</h1>
             <p class="banner-text">
-              Instagram xidməti, Netflix hesabı, Instagram hesabı, ChatGPT Plus, Canva Pro və digər
-              məhsullar bir ekranda rahat satılsın deyə qurulmuş mockup təcrübəsi.
+              Instagram xidmeti, Netflix hesabi, Instagram hesabi, ChatGPT Plus, Canva Pro ve
+              diger mehsullar bir ekranda rahat satilsin deye qurulmus mockup tecrubesi.
             </p>
             <div class="banner-actions">
-              <a class="primary-button" href="#catalog" data-ripple data-magnetic>Məhsullara bax</a>
-              <a class="secondary-button" href="#detail" data-ripple>Seçilən məhsul</a>
+              <a class="primary-button" href="#catalog" data-ripple data-magnetic>Mehsullara bax</a>
+              <a class="secondary-button" href="#detail" data-ripple>Secilen mehsul</a>
             </div>
             <div class="signal-row">
               <span>Ani klik feedback</span>
               <span>Mobil app hissi</span>
-              <span>Yüksək səviyyə animasiya</span>
+              <span>Yuksek seviyyeli animasiya</span>
             </div>
           </div>
 
           <div class="banner-stack">
             <div class="floating-panel panel-wide">
-              <span class="panel-label">Bu gün trend</span>
+              <span class="panel-label">Bu gun trend</span>
               <strong>ChatGPT Plus</strong>
-              <em>7 ₼ / ay</em>
+              <em>7 EUR / ay</em>
             </div>
             <div class="floating-panel panel-tall">
               <span class="panel-label">Instagram</span>
-              <strong>İzlənmə + hesab</strong>
-              <em>Sürətli aktiv</em>
+              <strong>Izlenme + hesab</strong>
+              <em>Suretli aktiv</em>
             </div>
             <div class="floating-panel panel-square">
               <span class="panel-label">Netflix 4K</span>
@@ -147,13 +157,13 @@
 
         <div class="hero-side">
           <article class="info-card glow-surface" data-reveal data-glow>
-            <span class="mini-kicker">Axtarış</span>
-            <h2>Axtar, istədiyini tap</h2>
-            <p>Bütün məlumatlar məhsul kartında və detail paneldə görünür.</p>
+            <span class="mini-kicker">Axtaris</span>
+            <h2>Axtar, istediyini tap</h2>
+            <p>Butun melumatlar mehsul kartinda ve detail panelde gorunur.</p>
           </article>
           <article class="support-card glow-surface" data-reveal data-glow>
-            <div class="support-badge"><span class="support-orb"></span>Canlı Dəstək</div>
-            <p>Satış, aktivasiya və suallar üçün sürətli cavab mockup blokudur.</p>
+            <div class="support-badge"><span class="support-orb"></span>Canli Destek</div>
+            <p>Satis, aktivasiya ve suallar ucun suretli cavab mockup blokudur.</p>
             <button class="support-button" type="button" data-ripple data-magnetic>Mesaj yaz</button>
           </article>
         </div>
@@ -161,47 +171,107 @@
 
       <section class="catalog section" id="catalog">
         <div class="section-bar" data-reveal>
-          <div class="section-title-pill">Ən çox satılanlar</div>
+          <div class="section-title-pill">En cox satilanlar</div>
           <div class="section-filters">
-            <button class="filter-chip active" type="button" data-ripple>Hamısı</button>
-            <button class="filter-chip" type="button" data-ripple>AI</button>
-            <button class="filter-chip" type="button" data-ripple>Media</button>
-            <button class="filter-chip" type="button" data-ripple>Instagram</button>
+            <button class="filter-chip active" type="button" data-ripple data-filter="all">Hamisi</button>
+            <button class="filter-chip" type="button" data-ripple data-filter="ai">AI</button>
+            <button class="filter-chip" type="button" data-ripple data-filter="premium">Media</button>
+            <button class="filter-chip" type="button" data-ripple data-filter="instagram">Instagram</button>
+            <button class="filter-chip" type="button" data-ripple data-filter="design">Design</button>
           </div>
         </div>
 
-        <div class="product-grid">
+        <div class="catalog-toolbar" data-reveal>
+          <div class="catalog-summary">
+            <strong id="catalog-result-count">8 mehsul</strong>
+            <span id="catalog-result-text">Hamisi bir ekranda rahat gorunur.</span>
+          </div>
+          <div class="catalog-controls">
+            <label class="sort-shell" for="catalog-sort">
+              <span>Sirala</span>
+              <select id="catalog-sort">
+                <option value="featured">Tovsiyye olunan</option>
+                <option value="price-asc">Ucuzden bahaya</option>
+                <option value="price-desc">Bahadan ucuza</option>
+                <option value="name">Ada gore</option>
+              </select>
+            </label>
+            <button class="outline-button slim-button" type="button" id="clear-catalog-state" data-ripple hidden>
+              Temizle
+            </button>
+          </div>
+        </div>
+
+        <div class="empty-state catalog-empty-state" id="catalog-empty-state" hidden>
+          <div class="empty-icon">?</div>
+          <h3>Axtaris uzre netice tapilmadi</h3>
+          <p>Basqa acar soz yaz, filtri temizle ve ya Hamisi sec ki mehsullar yeniden gorunsun.</p>
+        </div>
+
+        <div class="product-grid" id="product-grid">
           <button class="product-card active" type="button" data-product="chatgpt" data-ripple data-glow>
             <div class="product-art art-chatgpt"><span>AI</span></div>
-            <div class="product-meta"><h3>ChatGPT Plus</h3><p>Ortaq hesab • ani aktivasiya</p><div class="price-line"><strong>7 ₼</strong><span>1 ay</span></div></div>
+            <div class="product-meta">
+              <h3>ChatGPT Plus</h3>
+              <p>Ortaq hesab, ani aktivasiya</p>
+              <div class="price-line"><strong>7 EUR</strong><span>1 ay</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="youtube" data-ripple data-glow>
-            <div class="product-art art-youtube"><span>▶</span></div>
-            <div class="product-meta"><h3>YouTube Premium</h3><p>Şəxsi hesab • limitsiz istifadə</p><div class="price-line"><strong>9 ₼</strong><span>1 ay</span></div></div>
+            <div class="product-art art-youtube"><span>YT</span></div>
+            <div class="product-meta">
+              <h3>YouTube Premium</h3>
+              <p>Sexsi hesab, limitsiz istifade</p>
+              <div class="price-line"><strong>9 EUR</strong><span>1 ay</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="capcut" data-ripple data-glow>
             <div class="product-art art-capcut"><span>CC</span></div>
-            <div class="product-meta"><h3>CapCut Pro</h3><p>Şəxsi hesab • sürətli aktiv</p><div class="price-line"><strong>8 ₼</strong><span>endirim</span></div></div>
+            <div class="product-meta">
+              <h3>CapCut Pro</h3>
+              <p>Sexsi hesab, suretli aktiv</p>
+              <div class="price-line"><strong>8 EUR</strong><span>endirim</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="canva" data-ripple data-glow>
             <div class="product-art art-canva"><span>Ca</span></div>
-            <div class="product-meta"><h3>Canva Pro</h3><p>Ömürlük paket • dizayn aləti</p><div class="price-line"><strong>14 ₼</strong><span>ömürlük</span></div></div>
+            <div class="product-meta">
+              <h3>Canva Pro</h3>
+              <p>Omurluk paket, dizayn aleti</p>
+              <div class="price-line"><strong>14 EUR</strong><span>omurluk</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="netflix" data-ripple data-glow>
             <div class="product-art art-netflix"><span>N</span></div>
-            <div class="product-meta"><h3>Netflix 4K</h3><p>Premium ekran • hazır giriş</p><div class="price-line"><strong>10 ₼</strong><span>1 ay</span></div></div>
+            <div class="product-meta">
+              <h3>Netflix 4K</h3>
+              <p>Premium ekran, hazir giris</p>
+              <div class="price-line"><strong>10 EUR</strong><span>1 ay</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="instagram-service" data-ripple data-glow>
             <div class="product-art art-instagram"><span>IG</span></div>
-            <div class="product-meta"><h3>Instagram xidməti</h3><p>İzlənmə, bəyənmə, story boost</p><div class="price-line"><strong>5 ₼</strong><span>start</span></div></div>
+            <div class="product-meta">
+              <h3>Instagram xidmeti</h3>
+              <p>Izlenme, beyenme, story boost</p>
+              <div class="price-line"><strong>5 EUR</strong><span>start</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="instagram-account" data-ripple data-glow>
             <div class="product-art art-account"><span>@</span></div>
-            <div class="product-meta"><h3>Instagram hesabı</h3><p>Hazır profil • aktiv istifadə</p><div class="price-line"><strong>16 ₼</strong><span>hazır</span></div></div>
+            <div class="product-meta">
+              <h3>Instagram hesabi</h3>
+              <p>Hazir profil, aktiv istifade</p>
+              <div class="price-line"><strong>16 EUR</strong><span>hazir</span></div>
+            </div>
           </button>
           <button class="product-card" type="button" data-product="spotify" data-ripple data-glow>
             <div class="product-art art-spotify"><span>S</span></div>
-            <div class="product-meta"><h3>Spotify Family</h3><p>Musiqi paketi • sabit giriş</p><div class="price-line"><strong>6 ₼</strong><span>1 ay</span></div></div>
+            <div class="product-meta">
+              <h3>Spotify Family</h3>
+              <p>Musiqi paketi, sabit giris</p>
+              <div class="price-line"><strong>6 EUR</strong><span>1 ay</span></div>
+            </div>
           </button>
         </div>
       </section>
@@ -210,46 +280,49 @@
         <article class="detail-card glow-surface" data-reveal data-glow>
           <div class="detail-head">
             <div>
-              <span class="status-chip" id="detail-badge">Mövcuddur</span>
+              <span class="status-chip" id="detail-badge">Movcuddur</span>
               <h2 id="detail-title">ChatGPT Plus (ortaq hesab)</h2>
-              <p id="detail-subtitle">7/24 təqdim edilir • sürətli aktivasiya • ani təhvil</p>
+              <p id="detail-subtitle">7/24 teqdim edilir, suretli aktivasiya, ani tehvil</p>
             </div>
             <div class="detail-art art-chatgpt" id="detail-art"><span>AI</span></div>
           </div>
           <div class="detail-body">
             <div class="detail-price-box">
-              <span class="old-price" id="detail-old-price">10 ₼</span>
-              <strong id="detail-price">7 ₼</strong>
-              <small id="detail-note">Ən çox seçilən paket</small>
+              <span class="old-price" id="detail-old-price">10 EUR</span>
+              <strong id="detail-price">7 EUR</strong>
+              <small id="detail-note">En cox secilen paket</small>
             </div>
             <p class="detail-description" id="detail-description">
-              ChatGPT Plus üçün rahat görünən mockup detal hissəsi. Burada müddət seçimi, status, qiymət və CTA düymələri based.az tipli axında göstərilir.
+              ChatGPT Plus ucun rahat gorunen mockup detal hissesi. Burada muddet secimi, status,
+              qiymet ve CTA duymeleri based.az tipli axinda gosterilir.
             </p>
             <div class="option-list" id="detail-options"></div>
             <div class="detail-actions">
-              <button class="outline-button" type="button" data-ripple id="buy-now-button">İndi al</button>
-              <button class="buy-button" type="button" data-ripple data-magnetic id="add-to-cart-button">Səbətə at</button>
+              <button class="outline-button" type="button" data-ripple id="buy-now-button">Indi al</button>
+              <button class="buy-button" type="button" data-ripple data-magnetic id="add-to-cart-button">
+                Sebete at
+              </button>
             </div>
           </div>
         </article>
 
         <div class="detail-side">
           <article class="mini-panel glow-surface" data-reveal data-glow>
-            <h3>Niyə bu quruluş yaxşı işləyir?</h3>
+            <h3>Niye bu qurulus yaxsi isleyir?</h3>
             <ul class="advantage-list">
-              <li>Search və kateqoriya zolağı bir baxışda görünür.</li>
-              <li>Məhsul kartına klik edəndə detail sahəsi dərhal dəyişir.</li>
-              <li>Sarı CTA və tünd fon yüksək kontrast verir.</li>
-              <li>Animasiyalar premium hiss yaradır, amma saytı yormur.</li>
+              <li>Search ve kateqoriya zolagi bir baxisda gorunur.</li>
+              <li>Mehsul kartina klik edende detail sahe derhal deyisir.</li>
+              <li>Sari CTA ve tund fon yuksek kontrast verir.</li>
+              <li>Animasiyalar premium hiss yaradir, amma sayti yormur.</li>
             </ul>
           </article>
           <article class="mini-panel glow-surface" data-reveal data-glow>
-            <h3>Oxşar məhsullar</h3>
+            <h3>Oxsar mehsullar</h3>
             <div class="mini-grid">
-              <div class="mini-product"><span class="mini-art art-chatgpt">AI</span><strong>ChatGPT Team</strong><small>22 ₼</small></div>
-              <div class="mini-product"><span class="mini-art art-instagram">IG</span><strong>Reel boost</strong><small>6 ₼</small></div>
-              <div class="mini-product"><span class="mini-art art-canva">Ca</span><strong>Canva EDU</strong><small>11 ₼</small></div>
-              <div class="mini-product"><span class="mini-art art-netflix">N</span><strong>Netflix şəxsi</strong><small>12 ₼</small></div>
+              <div class="mini-product"><span class="mini-art art-chatgpt">AI</span><strong>ChatGPT Team</strong><small>22 EUR</small></div>
+              <div class="mini-product"><span class="mini-art art-instagram">IG</span><strong>Reel boost</strong><small>6 EUR</small></div>
+              <div class="mini-product"><span class="mini-art art-canva">Ca</span><strong>Canva EDU</strong><small>11 EUR</small></div>
+              <div class="mini-product"><span class="mini-art art-netflix">N</span><strong>Netflix sexsi</strong><small>12 EUR</small></div>
             </div>
           </article>
         </div>
@@ -258,33 +331,40 @@
       <section class="service-layout section">
         <article class="service-panel glow-surface" data-reveal data-glow>
           <p class="eyebrow">Sosial media paneli</p>
-          <h2>Instagram xidməti, hesab satışı və sürətli sifariş axını.</h2>
-          <p>Paketlər kart şəklində görünür, seçilən xidmət detail hissəyə düşür və istifadəçi bir neçə kliklə sifarişi tamamlaya bilir.</p>
-          <div class="service-tags"><span>Instagram izləyici</span><span>Story views</span><span>Reel boost</span><span>Hazır hesablar</span></div>
+          <h2>Instagram xidmeti, hesab satisi ve suretli sifaris axini.</h2>
+          <p>Paketler kart seklinde gorunur, secilen xidmet detail hisseye dusur ve istifadeci bir nece klikle sifarisi tamamlaya bilir.</p>
+          <div class="service-tags"><span>Instagram izleyici</span><span>Story views</span><span>Reel boost</span><span>Hazir hesablar</span></div>
         </article>
         <article class="service-panel glow-surface" data-reveal data-glow>
           <p class="eyebrow">Premium hesablar</p>
-          <h2>Netflix, Spotify, YouTube, ChatGPT və Canva bir mağazada.</h2>
-          <p>Məhsul artları fərqli rənglərlə ayrılır, amma ümumi interfeys bir sistem kimi qalır. Beləliklə sayt qarışıq görünmür.</p>
+          <h2>Netflix, Spotify, YouTube, ChatGPT ve Canva bir magazada.</h2>
+          <p>Mehsul artlari ferqli renglerle ayrilir, amma umumi interfeys bir sistem kimi qalir. Belelikle sayt qarisiq gorunmur.</p>
           <div class="service-tags"><span>Netflix 4K</span><span>Spotify Family</span><span>YouTube Premium</span><span>Canva Pro</span></div>
         </article>
       </section>
 
+      <section class="section recent-strip" id="recent-strip" data-reveal hidden>
+        <div class="section-bar section-bar-simple">
+          <div class="section-title-pill">Son baxilanlar</div>
+        </div>
+        <div class="recent-track" id="recent-track"></div>
+      </section>
+
       <section class="reviews section" id="reviews">
         <div class="section-bar section-bar-simple" data-reveal>
-          <div class="section-title-pill">Müştəri rəyləri</div>
+          <div class="section-title-pill">Musteri reyleri</div>
         </div>
         <div class="reviews-layout">
           <div class="review-cards">
-            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Elmar Sultanov</strong><span>★★★★★</span></div><p>Sayt mockup kimi çox rahat oxunur, kartlar və düymələr premium hiss verir.</p></article>
-            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Murad Cəlilov</strong><span>★★★★★</span></div><p>Məhsul seçəndə detail panelin dəyişməsi çox yaxşı görünür, mobil hissi də rahatdır.</p></article>
-            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Ziya Abilzadə</strong><span>★★★★★</span></div><p>Animasiyalar güclüdür, amma ağır deyil. Buna görə mockup real sayt kimi hiss olunur.</p></article>
+            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Elmar Sultanov</strong><span>*****</span></div><p>Sayt mockup kimi cox rahat oxunur, kartlar ve duymeler premium hiss verir.</p></article>
+            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Murad Celilov</strong><span>*****</span></div><p>Mehsul secende detail panelin deyismesi cox yaxsi gorunur, mobil hissi de rahatdir.</p></article>
+            <article class="review-card glow-surface" data-reveal data-glow><div class="review-head"><strong>Ziya Abilzade</strong><span>*****</span></div><p>Animasiyalar gucludur, amma agir deyil. Buna gore mockup real sayt kimi hiss olunur.</p></article>
           </div>
           <form class="review-form glow-surface" data-reveal data-glow>
-            <h3>Rəyinizi yazın</h3>
-            <p>Rəy forması məhsul səhifəsində istifadə olunacaq görünüş üçün əlavə edilib.</p>
-            <label><span>Rəy</span><textarea rows="5" placeholder="Bu məhsul haqqında fikirlərinizi yazın..."></textarea></label>
-            <button class="buy-button" type="button" data-ripple data-magnetic>Rəyi göndər</button>
+            <h3>Reyinizi yazin</h3>
+            <p>Rey formasi mehsul sehifesinde istifade olunacaq gorunus ucun elave edilib.</p>
+            <label><span>Rey</span><textarea rows="5" placeholder="Bu mehsul haqqinda fikirlerinizi yazin..."></textarea></label>
+            <button class="buy-button" type="button" data-ripple data-magnetic>Reyi gonder</button>
           </form>
         </div>
       </section>
@@ -294,30 +374,30 @@
       <div class="footer-grid">
         <div>
           <div class="brand"><span class="brand-box">N</span><div><strong>Nova Market</strong><span>premium store mockup</span></div></div>
-          <p>Rəqəmsal məhsullar, abunəliklər, Instagram xidmətləri və AI alətləri üçün real görünən marketplace mockup.</p>
+          <p>Reqemsal mehsullar, abunelikler, Instagram xidmetleri ve AI aletleri ucun real gorunen marketplace mockup.</p>
         </div>
         <div>
-          <h4>Keşf et</h4>
-          <a href="./index.html#catalog">Məhsullar</a>
-          <a href="./cart.html">Səbət</a>
-          <a href="./payment.html">Ödəniş</a>
+          <h4>Kesf et</h4>
+          <a href="./index.html#catalog">Mehsullar</a>
+          <a href="./cart.html">Sebet</a>
+          <a href="./payment.html">Odenis</a>
         </div>
         <div>
-          <h4>Əlaqə</h4>
+          <h4>Elaqe</h4>
           <a href="mailto:hello@novamarket.az">hello@novamarket.az</a>
           <a href="#">+994 50 000 00 00</a>
-          <a href="#">Canlı dəstək</a>
+          <a href="#">Canli destek</a>
         </div>
       </div>
     </footer>
 
-    <button class="floating-chat" type="button" data-ripple data-magnetic><span class="support-orb"></span><span>Canlı Dəstək</span></button>
+    <button class="floating-chat" type="button" data-ripple data-magnetic><span class="support-orb"></span><span>Canli Destek</span></button>
 
     <nav class="mobile-nav" aria-label="Mobil alt menyu">
       <a href="./index.html#popular" class="active">Ana</a>
-      <a href="./index.html#catalog">Kataloq</a>
-      <a href="./cart.html">Səbət</a>
-      <a href="./payment.html">Ödə</a>
+      <a href="./index.html#catalog">Katalog</a>
+      <a href="./cart.html">Sebet</a>
+      <a href="./payment.html">Ode</a>
       <a href="./success.html">Status</a>
     </nav>
 

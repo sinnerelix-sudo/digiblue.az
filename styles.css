@@ -290,6 +290,7 @@ textarea {
 .support-prompt,
 .mobile-nav a,
 .product-card,
+.recent-card,
 .option-pill {
   position: relative;
   overflow: hidden;
@@ -372,6 +373,7 @@ textarea {
 .buy-button:active,
 .support-button:active,
 .product-card:active,
+.recent-card:active,
 .support-prompt:active,
 .mobile-nav a:active {
   transform: scale(0.97);
@@ -721,6 +723,75 @@ textarea {
   flex-wrap: wrap;
 }
 
+.catalog-toolbar,
+.catalog-controls,
+.catalog-summary,
+.sort-shell,
+.recent-track,
+.recent-card,
+.recent-card-copy,
+.recent-card-price {
+  display: flex;
+}
+
+.catalog-toolbar {
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding-inline: 4px;
+}
+
+.catalog-summary {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.catalog-summary strong {
+  font-size: 1rem;
+}
+
+.catalog-summary span {
+  color: var(--soft);
+  line-height: 1.5;
+}
+
+.catalog-controls {
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-shell {
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(28, 28, 28, 0.9);
+}
+
+.sort-shell span {
+  color: var(--soft);
+  font-size: 0.88rem;
+}
+
+.sort-shell select {
+  min-width: 150px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.catalog-empty-state {
+  margin: 6px 0 16px;
+  border: 1px dashed rgba(255, 199, 29, 0.24);
+  border-radius: 24px;
+  background: rgba(255, 199, 29, 0.05);
+}
+
 .filter-chip {
   min-height: 44px;
   padding: 0 14px;
@@ -941,6 +1012,79 @@ textarea {
 
 .service-layout {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.recent-strip {
+  margin-top: 22px;
+}
+
+.recent-track {
+  gap: 14px;
+  overflow-x: auto;
+  padding: 2px 2px 8px;
+  scrollbar-width: none;
+}
+
+.recent-track::-webkit-scrollbar {
+  display: none;
+}
+
+.recent-card {
+  min-width: 244px;
+  padding: 14px;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01)),
+    var(--panel);
+  color: var(--text);
+  text-align: left;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.recent-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 199, 29, 0.22);
+}
+
+.recent-card-art {
+  height: 118px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "Sora", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.recent-card-copy {
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recent-card-copy span {
+  color: var(--muted);
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.recent-card-price {
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.recent-card-price strong {
+  font-size: 1.08rem;
+}
+
+.recent-card-price span {
+  color: var(--accent);
+  font-weight: 700;
 }
 
 .service-panel h2 {
@@ -1661,6 +1805,8 @@ textarea {
   .cart-item-row { grid-template-columns: 84px minmax(0, 1fr); }
   .cart-line-price,
   .qty-stepper { justify-self: start; }
+  .catalog-toolbar { flex-direction: column; align-items: stretch; }
+  .catalog-controls { justify-content: space-between; }
 }
 
 @media (max-width: 640px) {
@@ -1734,7 +1880,43 @@ textarea {
     padding-bottom: 4px;
     scrollbar-width: none;
   }
+  .catalog-controls {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sort-shell {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .sort-shell select {
+    min-width: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .catalog-summary {
+    gap: 2px;
+  }
+  .catalog-empty-state {
+    padding: 18px;
+  }
   .detail-actions { flex-direction: column; }
+  .detail-actions {
+    position: sticky;
+    bottom: 70px;
+    z-index: 12;
+    padding: 10px;
+    border-radius: 22px;
+    background: rgba(10, 10, 10, 0.86);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+  }
+  .recent-card {
+    min-width: min(84vw, 260px);
+  }
+  .recent-card-art {
+    height: 104px;
+  }
   .form-grid { grid-template-columns: 1fr; }
   .panel-heading,
   .method-heading { flex-direction: column; align-items: stretch; }

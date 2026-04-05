@@ -110,3 +110,9 @@ Latest sync context:
 - Aktiv lokal IPv4 `192.168.100.8` olaraq gorundu.
 - `py -m http.server 4173 --bind 0.0.0.0` ile server qaldirildi.
 - `127.0.0.1:4173/index.html` ve `192.168.100.8:4173/index.html` her ikisi `200` qaytardi.
+- Home page daha funksional hala getirildi.
+- `index.html`, `styles.css` ve `script.js` yenilendi.
+- Live search, real filterler, sort select, netice sayi, bos netice state-i ve son baxilanlar hissesi elave edildi.
+- Mobil rahatliq ucun detail action hissesi daha rahat sticky hala getirildi.
+- `index.html`, `cart.html`, `payment.html`, `success.html` yeniden `200` ile yoxlanildi.
+- `script.js` sintaksisi local olaraq temiz kecdi.
